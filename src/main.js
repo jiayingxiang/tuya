@@ -6,8 +6,11 @@ import axios from 'axios'
 import VueLazyload from 'vue-lazyload'
 
 
-Vue.filter("res",function(val){
-  return val==1?"活动进行中":"活动已结束"
+Vue.filter("res",function(item){
+  var end=new Date(item.end).getTime();
+  var now=new Date().getTime();
+  var count=parseInt(end-now);
+  return count<0?"活动已结束":"活动进行中"
 })
 Vue.filter("date",function(item){
     var end=new Date(item.end).getTime();

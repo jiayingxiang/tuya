@@ -42,19 +42,19 @@
                     <div>
                         <div>
                             <h3>{{item.title}}</h3>
-                            <p v-bind:style="{color:item.aid===aid?'#00d084':'#a0a5ad'}">{{item.result | res}}</p>
+                            <p v-bind:style="{color:(new Date(item.end).getTime()-new Date().getTime())>0?'#00d084':'#a0a5ad'}">{{item | res}}</p>
                         </div>
                         <div>
                             <div>
-                                <div class="date_box" id="d" v-bind:style="{color:item.aid===aid?'#1a1a1a':'#a0a5ad'}">{{item| date}}</div>
+                                <div class="date_box" id="d" v-bind:style="{color:(new Date(item.end).getTime()-new Date().getTime())>0?'#1a1a1a':'#a0a5ad'}">{{item| date}}</div>
                                 <p>天</p>
                             </div>
                             <div>
-                                <div class="date_box" id="h" v-bind:style="{color:item.aid===aid?'#1a1a1a':'#a0a5ad'}">{{item| hours}}</div>
+                                <div class="date_box" id="h" v-bind:style="{color:(new Date(item.end).getTime()-new Date().getTime())>0?'#1a1a1a':'#a0a5ad'}">{{item| hours}}</div>
                                 <p>时</p>
                             </div>
                             <div>
-                                <div class="date_box" id="m" v-bind:style="{color:item.aid===aid?'#1a1a1a':'#a0a5ad'}">{{item| minute}}</div>
+                                <div class="date_box" id="m" v-bind:style="{color:(new Date(item.end).getTime()-new Date().getTime())>0?'#1a1a1a':'#a0a5ad'}">{{item| minute}}</div>
                                 <p>分</p>
                             </div>
                         </div>
@@ -85,7 +85,6 @@
         data(){
             return{
                 list:[],
-                aid:1,
                 pnos:this.pnos,
                 onClass:0,
                 tem:0,
@@ -270,9 +269,6 @@
         }
         #jyx #section>.list_wrap>ul>li>div:first-child>a>img:hover{
             opacity:0.8;
-            transition-duration: .15s;
-            transition-timing-function: linear;
-            transition-delay: 0s;
         }
         #jyx #section>.list_wrap>ul>li>div:last-child{
             display: flex;

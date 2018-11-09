@@ -20,7 +20,10 @@ CREATE TABLE active_competition(
     end DATETIME,
     result BOOL
 );
-INSERT INTO active_competition VALUES(NULL,"笔绘宫心「宫廷计」手游同人插画漫画征集大...","http://localhost:8080/img/jyx-active/pic_k7mvt9r2s0mj51a421yrb8w3vcti5914.jpg","2018-9-28 0:0:0","2018-10-28 0:0:0",1);
+INSERT INTO active_competition VALUES(NULL,"剑网三漫画插画大赛","http://localhost:8080/img/jyx-active/148982369624041.jpg","2018-9-28 0:0:0","2018-12-8 0:0:0",0);
+INSERT INTO active_competition VALUES(NULL,"蒙牛真果粒一夏变美粒","http://localhost:8080/img/jyx-active/pic_wrrfrm5gk1n51apdgxynt11ugktn1ty9.jpg","2018-9-28 0:0:0","2018-11-9 0:0:0",1);
+INSERT INTO active_competition VALUES(NULL,"蒙牛真果粒一夏变美粒","http://localhost:8080/img/jyx-active/pic_wrrfrm5gk1n51apdgxynt11ugktn1ty9.jpg","2018-9-28 0:0:0","2018-11-18 0:0:0",1);
+INSERT INTO active_competition VALUES(NULL,"笔绘宫心「宫廷计」手游同人插画漫画征集大...","http://localhost:8080/img/jyx-active/pic_k7mvt9r2s0mj51a421yrb8w3vcti5914.jpg","2018-9-28 0:0:0","2018-10-28 0:0:0",0);
 INSERT INTO active_competition VALUES(NULL,"蒙牛真果粒一夏变美粒","http://localhost:8080/img/jyx-active/pic_wrrfrm5gk1n51apdgxynt11ugktn1ty9.jpg","2018-9-28 0:0:0","2018-10-8 0:0:0",0);
 INSERT INTO active_competition VALUES(NULL,"剑网3九周年同人嘉年华","http://localhost:8080/img/jyx-active/pic_t9jrnopzuxrdr7wgz2v9ikezf8b0of4t.jpg","2018-9-28 0:0:0","2018-10-8 0:0:0",0);
 INSERT INTO active_competition VALUES(NULL,"英雄归来像素风绘画大赛","http://localhost:8080/img/jyx-active/pic_iqcfax7afzwqhrr8lwgvcjfegcsngc6o.jpg","2018-9-28 0:0:0","2018-10-8 0:0:0",0);
